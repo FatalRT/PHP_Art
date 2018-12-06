@@ -1,0 +1,245 @@
+html,body,div,p,h4,ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: green; */
+    background: url(../img/login-ground.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+h4,span{
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a:link,a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    line-height: 20px;
+}
+
+.top-nav{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.top-nav .logo{
+    position: absolute;
+    bottom: 0px;
+}
+
+.top-nav .logo img{
+    margin-bottom: 10px;
+}
+
+.top-nav .logo span{
+    font-size: 28px;
+    line-height: 1;
+    color: white; 
+    margin-left: 5px;
+}
+
+.login-title{
+    position: relative;
+    width: 50%;
+    margin: 10px auto 35px;
+    text-align: center;
+    /* background-color: gold; */
+}
+
+.login-title img{
+    position: relative;
+    margin: 15px;
+}
+
+.login-window{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    margin: 15px auto;
+    padding: 20px 35px;
+    border-radius: 7px;
+    background-color: rgba(1255,255,255,0.95);
+}
+
+.login-window .login-selection{
+    position: relative;
+    height: 65px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(173, 163, 163, 0.63);
+}
+
+.login-window .login-selection li{
+    float: left;
+    list-style: none;
+    margin-left: 53px;
+    margin-top: 10px;
+    padding-bottom: 33px;
+    font-size: 16px;    
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-window .login-selection li a{
+    color: #888282;
+}
+
+.login-window .login-selection .active{
+    border-bottom: solid 2px black;
+}
+
+.login-window .login-selection .active a{
+    color: black;
+    font-weight: bold;
+}
+
+.login-window .login-selection li:first-child{
+    margin-left: 0;
+}
+
+.login-window .login-selection li:hover{
+    border-bottom: 2px solid black;
+}
+
+.login-window .login-selection li:hover a{
+    color: black;
+    font-weight: bold;
+}
+
+.login-window .login-input{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.login-window .login-input input{
+    position: relative;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: solid 1px #dddddd;
+    padding-left: 10px;
+    background: #f4f4f4;
+    outline: none;
+}
+
+.login-window .login-input input:focus{
+    background-color: white;
+}
+
+.login-window .login-input button{
+    position: relative;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;    
+}
+
+.login-window .login-state{
+    position: relative;
+    float: left;
+    width: 50%; 
+}
+
+.login-window .login-state label{
+    cursor: pointer;
+}
+
+.login-window .login-other{
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.login-window .login-other a,span{
+    color: #888282;
+}
+
+.login-window .login-other a:hover{
+    color: black;
+}
+
+.login-window .login-way{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+    color: #bbbbbb;
+    /* background-color: red; */
+}
+
+.login-window .login-way .login-way-icon{
+    position: relative;
+    width: 63%;
+    height: 70px;
+    /* background: green; */
+    text-align: center;
+    margin: 30px auto;
+}
+
+.login-window .login-way .login-way-icon a{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #888282;
+}
+
+.login-window .login-way .login-way-icon .wechat{
+    background: url(../img/微信.png) center center no-repeat;
+    background-size: 50%;
+    background-color: #dddddd;
+}
+
+.login-window .login-way .login-way-icon .qq{
+    background: url(../img/qq.png) center center no-repeat;
+    background-size: 50%;
+    background-color: #dddddd;
+}
+
+.login-window .login-way .login-way-icon .weibo{
+    background: url(../img/微博.png) center center no-repeat;
+    background-size: 50%;
+    background-color: #dddddd;
+}
+
+.login-window .login-way .login-way-icon .wechat:hover{
+    background-color: #73b856;
+}
+
+.login-window .login-way .login-way-icon .qq:hover{
+    background-color: #58a9de;
+}
+
+.login-window .login-way .login-way-icon .weibo:hover{
+    background-color: #d73130;
+}
+
+.background-link{
+    position: relative;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.background-link a{
+    color: white;
+}

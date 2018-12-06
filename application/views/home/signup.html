@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/bootstrap.min.css';?>" >
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/fullpage.css';?>">
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/signup.css';?>">
+
+    <script src="<?php echo base_url().'/resource/js/jquery-3.3.1.js';?>"></script>
+    <script src="<?php echo base_url().'/resource/js/bootstrap.js';?>"></script>
+    <script src="<?php echo base_url().'/resource/js/fullpage.js';?>"></script>
+    <title>注册</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 顶部导航栏 -->
+            <div class="signup-top">
+                <div class="logo">
+                    <img src="<?php echo base_url().'/resource/img/zcool_logo.svg';?>" alt="logo">
+                    <span>通行证</span>
+                </div>
+                <div class="signup-navigation">
+                    <span> 已有账号，<a href="<?php echo site_url().'/Welcome/login/';?>">马上登录</a></span>
+                    <a href="<?php echo site_url().'/Welcome/index/';?>">返回主页</a>
+                </div>
+            </div>
+            <!-- 内容部分 -->
+            <div class="signup-content">
+                <div class="sinup-title">
+                    <p>注册会员</p>
+                </div>
+                <form method="post" action="<?php echo site_url('users/signup')?>" >
+                <div class="signup-item">
+                    <div class="signup-input">
+                        <input name="username" type="text" placeholder="用户名"><br>
+                        <input name="password" type="text" placeholder="密码"><br>
+                        <input type="checkbox" id="checkbox">&nbsp;
+                        <label for="checkbox">我已同意 <a href="#">用户协议</a></label><br>
+                        <input type="button" value="注册">
+                    </div>        
+                </div>
+                </form>
+                <div class="signup-way">
+                    <p>使用社交账号登录</p>
+                    <a href="#" class="signup-way-wechat"></a>
+                    <a href="#" class="signup-way-qq"></a>
+                    <a href="#" class="signup-way-weibo"></a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

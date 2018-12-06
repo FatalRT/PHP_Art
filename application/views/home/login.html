@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/bootstrap.min.css';?>" >
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/fullpage.css';?>">
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/login.css';?>">
+
+    <script src="<?php echo base_url().'/resource/js/jquery-3.3.1.js';?>"></script>
+    <script src="<?php echo base_url().'/resource/js/bootstrap.js';?>"></script>
+    <script src="<?php echo base_url().'/resource/js/fullpage.js';?>"></script>
+    <title>登录</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="logo col-lg-3 col-lg-offset-1">
+                    <a href="#">
+                        <img src="<?php echo base_url().'/resource/img/zcool_logo.svg';?>" alt="logo">
+                    </a>
+                    <span>| 通行证</span>
+                </div>
+            </div>
+
+            <!-- 标题 -->
+             <div class="login-title">
+                <img src="<?php echo base_url().'/resource/img/zcool_logo.svg';?>" alt="logo">
+                <h4>登录站酷网，与650万+ 名设计师一起交流设计、分享快乐吧！</h4>        
+            </div>
+            <!-- 登录窗口 -->
+            <div class="login-window">
+                <div class="login-selection">
+                    <ul>
+                        <li class="active"><a href="#">用户登录</a></li>
+                        <li><a href="#">创作者登录</a></li>
+                        <li><a href="#">管理员登录</a></li>
+                    </ul>
+                </div>
+                <form action="<?php echo site_url('users/send')?>" method="post">
+                <div   class="login-input">
+                    <input name="username"type="text" placeholder="手机号/邮箱"><br>
+                    <input name="password"type="password" placeholder="密码"><br>
+                    <button type="submit" class="btn btn-success">登录</button>
+                </div>
+                </form>
+                <div class="login-state">
+                    <input type="checkbox" id="checkbox"> 
+                    <label for="checkbox">自动登录</label>
+                </div>
+                <div class="login-other">
+                    <a href="#">忘记密码</a>&nbsp;<span>|</span>&nbsp;<a href="<?php echo site_url().'/Welcome/signup/';?>">注册</a>
+                </div>
+                <div class="login-way">
+                    <p>第三方账号登录</p>   
+                    <div class="login-way-icon">
+                        <a href="#"  class="wechat"></a>
+                        <a href="#" class="qq"></a>
+                        <a href="#" class="weibo"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 图片来源 -->
+            <div class="background-link">
+                <a href="https://www.hellorf.com/image/show/403770346">图片来自站酷海洛</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

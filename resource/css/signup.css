@@ -1,0 +1,176 @@
+html,body,div,ul,li,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,a:visited{
+    text-decoration: none;
+    color: orange;
+}
+
+input[type=checkbox],label:hover{
+    cursor: pointer;
+}
+
+.signup-top{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.signup-top .logo{
+    display: inline-block;
+}
+
+.signup-top .logo img{
+    margin-bottom: 10px;
+}
+
+.signup-top .logo span{
+    position: relative;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.signup-top .signup-navigation{
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 43px;
+}
+
+.signup-top .signup-navigation a{
+    padding: 0 8px;
+}
+
+.signup-top .signup-navigation > a{
+    border-left: solid 1px black;
+}
+
+.signup-content{
+    position: relative;
+    width: 60%;
+    margin: 20px auto;
+    background: white;
+}
+
+.signup-content .sinup-title{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 26px;
+    background-color: #f9d147;
+}
+
+.signup-content .signup-item{
+    position: relative;
+    width: 100%;
+    /* height: 370px; */
+    padding: 0 auto;
+    padding-top: 30px;
+    /* background: white; */
+}
+
+.signup-content .signup-item .signup-input{
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.signup-content .signup-item .signup-input input[type=text],input[type=button]{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup-content .signup-item .signup-input input[type=text]{
+    padding-left: 10px;
+    border: solid 1px #dddd;
+    background: #f4f4f4;
+}
+
+.signup-content .signup-item .signup-input input[type=text]:focus{
+    background: white;
+}
+
+.signup-content .signup-item .signup-input input[type=button]{
+    color: #f4f4f4;
+    border: none;
+    background: skyblue;
+}
+
+.signup-content .signup-item .signup-input input[type=button]:hover{
+    color: #f4f4f4;
+    background: #46a7f1;
+}
+
+.signup-content .signup-way{
+    position: relative;
+    width: 40%;
+    height: 80px;
+    margin: 20px auto;
+    /* background-color: #f9d147; */
+    line-height: 40px;
+}
+
+.signup-content .signup-way p{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.signup-content .signup-way a{
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    border-radius: 50%;
+}
+
+.signup-content .signup-way .signup-way-wechat{
+    background: url(../img/微信.png) center center no-repeat;
+    background-size: 70%;
+    background-color: #dddddd;
+}
+
+.signup-content .signup-way .signup-way-qq{
+    background: url(../img/qq.png) center center no-repeat;
+    background-size: 70%;
+    background-color: #dddddd;
+}
+
+.signup-content .signup-way .signup-way-weibo{
+    background: url(../img/微博.png) center center no-repeat;
+    background-size: 70%;
+    background-color: #dddddd;
+}
+
+.signup-content .signup-way .signup-way-wechat:hover{
+    background-color: #73b856;
+}
+
+.signup-content .signup-way .signup-way-qq:hover{
+    background-color: #58a9de;
+}
+
+.signup-content .signup-way .signup-way-weibo:hover{
+    background-color: #d73130;
+}
