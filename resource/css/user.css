@@ -1,0 +1,174 @@
+
+html,body,div,ul,li,a,p,h1,img{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*  */
+
+li{
+    list-style: none;
+}
+
+a:hover,a:visited {
+    text-decoration: none;
+}
+
+input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    color: white;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+}
+
+
+/*公共部分*/
+.section{overflow: hidden;}
+
+#box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#informaton{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#information .information-total{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background.jpg) center center no-repeat;
+}
+
+#information .left{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+
+}
+
+#information .left ul{
+    position: relative;
+    width: 60%;
+    height: 50%;
+    top: 20%;
+    left: 35%;
+    /* background: white; */
+}
+
+#information .left li{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    line-height: 40px;
+    text-align: right;
+}
+
+#information .left a{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#information .left li a:hover,a:visited{
+    color: #f19b4b;
+}
+
+#information .right{
+    position: relative;
+    width: 40%;
+    height: 50%;
+    top: 32%;
+    left: 5%;
+    display: inline-block;
+}
+
+#information .right .li-1,.li-2,.li-3,.li-4{
+    position: relative;
+    width: 60%;
+    height: 25%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#information .right input:hover{
+    border: solid 1px #f19b4b;
+    color: #f19b4b;
+}
+
+/* 第二幕 */
+#collection .collection-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background: url(../img/background2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.collection-box .collection-title{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+   
+}
+
+.collection-box .collection-pic{
+    position: relative;
+    width: 854px;
+    margin: 10px auto;
+}
+
+.collection-box .collection-pic .pic{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    display: inline-block;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.collection-box .collection-pic .pic:last-child{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    display: inline-block;
+    background-size: cover;
+}
+.footer {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    mso-shadow-color: aqua;
+    background-color: rgba(75, 0, 16, 0.4);
+}
+
+
+
+
+
+
+

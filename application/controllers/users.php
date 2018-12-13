@@ -25,7 +25,7 @@ class users extends CI_Controller
                 'password' => $password
             );
             $this->session->set_userdata($user_data);//Session
-            success('users/user', '登陆成功！');//自定义成功跳转函数
+            success('users/puser', '登陆成功！');//自定义成功跳转函数
         }else{
             error('账号密码错误');
         }
@@ -35,7 +35,7 @@ class users extends CI_Controller
     public  function  user()
     {
         if (isset($this->session->u_name)){//后台用户已经登陆
-            $this->load->view('home/index.html');
+            $this->load->view('home/user.html');
         }else{//后台用户还未登陆
             $this->load->view('home/index.html');
         }
@@ -49,5 +49,9 @@ class users extends CI_Controller
         }else{
             error("用户名重复！！！");
         };
+    }
+    public function puser()
+    {
+        $this->load->view('home/user.html');
     }
 }

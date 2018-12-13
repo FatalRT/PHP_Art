@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/bootstrap.min.css';?>" >
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/fullpage.css';?>">
+    <link rel="stylesheet" href="<?php echo base_url().'/resource/css/user.css';?>">
+
+    <script src="<?php echo base_url().'/resource/js/jquery-3.3.1.js';?>"></script>
+    <script src="<?php echo base_url().'/resource/js/bootstrap.js';?>"></script>
+    <script src="<?php echo base_url().'/resource/js/fullpage.js';?>"></script>
+    <title>用户个人信息</title>
+
+</head>
+<body>
+    <!-- 顶部导航条 -->
+    <nav class="navbar navbar-default navbar-inverse navbar-static-top navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <!-- <img src="img/Brandi.png"> -->
+                        logo位置
+                    </a>
+                </div>
+    
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">Features</a></li>
+                         <li><a href="#">Works</a></li>
+                         <li><a href="#">Team</a></li>
+                         <li><a href="#">Contract</a></li>
+                        <li><a href="<?php echo site_url().'/Welcome/login/';?>" target="_blank">登录</a></li>
+                        <li><a href="<?php echo site_url().'/Welcome/signup/';?>" target="_blank">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- 内容部分 -->
+    <div id="box">
+
+    <!-- 第一慕 -->
+        <div class="section fp-auto-height-responsive active" id="information" >
+            <div class="information-total">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">当前位置：个人中心</a></li>
+                        <li><a href="#">用户名</a></li>
+                        <li><a href="#">性别</a></li>
+                        <li><a href="#">个性签名</a></li>
+                        <li><a href="#">自我描述</a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <div class="li-1">
+                        <input type="text" placeholder="输入用户名" value="前端开发者">
+                    </div>
+                    <div class="li-2">
+                        <input type="text" placeholder="输入性别" value="男">
+                    </div>
+                    <div class="li-3">
+                        <input type="text" placeholder="输入个性签名" value="hello world!">
+                    </div>
+                    <div class="li-4">
+                        <input type="text" placeholder="输入自我描述" value="萨瓦迪卡，欢迎大家。">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    <!-- 第二幕 -->
+        <div class="section fp-auto-height-responsive" id="collection">
+            <div class="collection-box">
+                <div class="collection-title"><p> 个人收藏 </p></div>
+                <div class="collection-pic" id="collection-area">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+                    <img src="<?php echo base_url().'/resource/img/img3.png';?>" class="pic">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 尾部-->
+</body>
+<script>
+    $(function(){
+        $("#box").fullpage({
+            navigation: true,//显示右边导航小圆点
+            //anchors: ["page1","page2","page3"],            
+        })
+    });
+</script>
+
+<!-- <script>
+    var clientWidth = window.screen.availWidth;//获取屏幕可用宽度
+    clientWidth = clientWidth.toString();
+    var picArea = document.getElementById("collection-area");
+    picArea.style.setProperty("width",clientWidth+"px");//设置对应 div 宽度
+
+</script> -->
+</html>
